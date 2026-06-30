@@ -481,9 +481,14 @@ h1 .highlight:nth-of-type(3)::before {
 }
 
 footer a {
-  color: var(--accent);
   text-decoration: none;
-  text-transform: uppercase;
+  color: var(--accent-alt);
+  opacity: 0.6;
+}
+
+footer a:hover {
+  opacity: 1;
+  color: var(--accent);
 }
 
 .section-reveal {
