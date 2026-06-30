@@ -196,8 +196,8 @@ h3 {
 h1 .highlight {
   position: relative;
   display: inline-block;
-  color: inherit;
-  isolation: isolate;
+  color: var(--bg-strong);
+  z-index: 0;
 }
 
 h1 .highlight::before {
@@ -205,6 +205,7 @@ h1 .highlight::before {
   position: absolute;
   inset: 0;
   z-index: -1;
+  pointer-events: none;
   background: var(--accent);
   opacity: 0;
   clip-path: inset(0 100% 0 0);
@@ -296,7 +297,7 @@ h1 .highlight:nth-of-type(3)::before {
 }
 
 .services,
-.coverage,
+.area,
 .about,
 .contact {
   padding: 4rem 0;
