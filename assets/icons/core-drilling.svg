@@ -1,0 +1,29 @@
+<svg viewBox="0 0 512 511.99998518" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<linearGradient id="core-drill-gradient" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0%" stop-color="#80ff80"/>
+			<stop offset="50%" stop-color="#010101"/>
+		</linearGradient>
+		<clipPath id="core-drill-mask">
+			<rect x="64" y="179.2" width="384" height="153.6"/>
+		</clipPath>
+	</defs>
+	<style>
+		.drill-sweep {
+			animation: drill-sweep 2.4s linear infinite;
+		}
+
+		@keyframes drill-sweep {
+			0%, 35% { transform: translateX(0); }
+			100% { transform: translateX(-384px); }
+		}
+	</style>
+	<rect x="0" y="0" width="100%" height="100%" fill="#010101"/>
+	<path d="m0 0h512v511.999985h-512z" fill="none"/>
+
+	<g clip-path="url(#core-drill-mask)">
+		<rect class="drill-sweep" x="64" y="179.2" width="384" height="153.6" fill="#ffffff"/>
+	</g>
+
+	<path d="m64 64.000014h76.8v384h-76.8z" fill="#80ff80"/>
+</svg>
